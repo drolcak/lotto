@@ -45,17 +45,25 @@
 
 <body>
 
-<h1>Click the button to run a lottery</h1>
 
 <button>Start Lottery</button>
 
 
 <script>
+    const result = [];
     const Lottery = function () {
+
+        if (result.length ===6) {
+            return
+        }
         var random = (Math.random()*49)+1;
         const div = document.createElement("div");
-        div.textContent = Math.floor(Math.random()*49+1);
+        const lotteryresult = Math.floor(Math.random()*49+1);
+        div.textContent = lotteryresult;
+        result.push(div); //add result to array
         document.body.appendChild(div);
+
+
 
 
     };
