@@ -52,8 +52,12 @@
 
 <script>
     const Lottery = function () {
+        var random = (Math.random()*49)+1;
         const div = document.createElement("div");
+        div.textContent = Math.floor(Math.random()*49+1);
         document.body.appendChild(div);
+
+
     };
 
     const getValue = document.querySelector("button"); //get element
