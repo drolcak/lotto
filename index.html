@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lotery in JS</title>
+    <style>
+
+        body { font-family: Arial}
+        button {
+        font-weight: bold;
+            display: block;
+            margin: 0 auto;
+            width: 300px;
+            height: 40px;
+            border-radius: 5%;
+            background: white;
+            transition: 0.5s;
+            padding: 10px 10px 10px 10px;
+
+            text-align: center;
+
+        }
+        button:hover {
+            background: black;
+            color: white;
+        }
+
+        div {
+           float: left;
+            margin-left: 100px;
+            width: 100px;
+            height: 100px;
+            margin-top: 100px;
+            background: black;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 100px;
+            font-weight: bolder;
+            font-size: 40px;
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<h1>Click the button to run a lottery</h1>
+
+<button>Start Lottery</button>
+
+
+<script>
+    const Lottery = function () {
+        const div = document.createElement("div");
+        document.body.appendChild(div);
+    };
+
+    const getValue = document.querySelector("button"); //get element
+    getValue.addEventListener("click", Lottery ); //get event
+
+
+
+
+</script>
+</body>
+</html>
